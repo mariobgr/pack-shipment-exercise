@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/golang/Dockerfile
+    restart: always
+    volumes:
+      - ".:/go/src/app"
+    container_name: app
+    ports:
+      - "8080:8080"
+    tty: true

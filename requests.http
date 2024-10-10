@@ -1,0 +1,19 @@
+### Unauthorised Request - list
+
+GET http://localhost:8080/
+
+### Authorised Request - list
+
+GET http://localhost:8080/
+X-Api-Key: Ap1K3y
+
+### Authorised Request - calculate
+
+POST http://localhost:8080/calculate
+X-Api-Key: Ap1K3y
+
+{
+  "items": 256
+}
+
+
